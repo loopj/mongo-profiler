@@ -1,0 +1,10 @@
+{
+  "name": "mongo-profiler",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "express": "latest",
+    "ejs": "latest",
+    "mongoskin": "latest"
+  }
+}
