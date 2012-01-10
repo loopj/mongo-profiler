@@ -1,0 +1,31 @@
+<style>
+table {
+  width: 100%;
+}
+
+th {
+  text-align: left;
+}
+</style>
+
+<table>
+  <thead>
+    <tr>
+      <th>Collection</th>
+      <th>Operation</th>
+      <th>Query</th>
+      <th>Millis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for(var i=0; i<ops.length; i++) { %>
+      <% op = ops[i] %>
+      <tr>
+        <td><%= op.collection %></td>
+        <td><%= op.operation %></td>
+        <td><%= JSON.stringify(op.query) %></td>
+        <td><%= op.millis %></td>
+      </tr>
+    <% } %>
+  </tbody>
+</table>
