@@ -68,8 +68,8 @@ getNormalizedOperation = (profile) ->
     res.collection = profile.ns
     res.payload = "TODO"
     res.query = profile.query
-    res.query = profile.query.$query if profile.query.$query
-    res.query = profile.query.query if profile.query.query
+    res.query = profile.query.$query if profile.query && profile.query.$query
+    res.query = profile.query.query if profile.query && profile.query.query
 
   res.normalized_query = getNormalizedQuery(res.query) if res.query
 
